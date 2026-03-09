@@ -1,0 +1,16 @@
+def total_cost(total_hours, earning):
+    return total_hours * earning
+
+
+def main():
+    try:
+        earning = int(input("Earning: "))
+        total_hours = int(input("Total hours: "))
+        print(total_cost(total_hours, earning))
+    except:
+        print("error")
+        main()
+
+
+if __name__=="__main__":
+    main()

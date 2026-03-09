@@ -1,0 +1,27 @@
+def main():
+    try:
+        grade = float(input("Grade: "))
+        if(grade<0 or grade>1):
+            print("Grade outside of interval")
+            return
+        elif(grade< 0.6):
+            print("F")
+            return
+        elif(grade<0.7):
+            print("D")
+            return
+        elif(grade<0.8):
+            print("C")
+            return
+        elif(grade<0.9):
+            print("B")
+            return
+        else:
+            print("A")
+            return
+    except:
+        print("Grade format invalid")
+    
+
+if __name__=="__main__":
+    main()
